@@ -26,20 +26,20 @@
 
 
 -- Displays a message in the log
-function antum.log(level, message)
-	core.log(level, '[' .. core.get_current_modname() .. '] ' .. message)
+function antum.log(level, msg)
+	core.log(level, '[' .. core.get_current_modname() .. '] ' .. msg)
 end
 
-function antum.logAction(message)
-	antum.log('action', message)
+function antum.logAction(msg)
+	antum.log('action', msg)
 end
 
-function antum.logWarn(message)
-	antum.log('warning', message)
+function antum.logWarn(msg)
+	antum.log('warning', msg)
 end
 
-function antum.logError(message)
-	antum.log('error', message)
+function antum.logError(msg)
+	antum.log('error', msg)
 end
 
 
