@@ -61,7 +61,7 @@ end
 
 core.register_craftitem(':antum:bottled_water', {
 	description = 'A bottle of water',
-	inventory_image = 'bottled_water.png',
+	inventory_image = 'antum_bottled_water.png',
 })
 
 
