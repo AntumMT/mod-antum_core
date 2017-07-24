@@ -28,6 +28,7 @@
 antum = {}
 antum.modname = core.get_current_modname()
 antum.modpath = core.get_modpath(antum.modname)
+antum.namespace = 'antum'
 
 antum.verbose = false
 if core.settings:get_bool('log_mods') then

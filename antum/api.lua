@@ -261,3 +261,16 @@ function antum.overrideItemDescription(item_name, description)
 	
 	core.register_craftitem(':' .. item.name, item)
 end
+
+
+--[[ Registers a new item under "antum" namespace
+
+  @param name
+    Base name of new item
+  @param def
+    Item definition
+]]
+function antum.registerItem(name, def)
+	name = ':' .. antum.namespace .. ':' .. name
+	core.register_craftitem(name, def)
+end
