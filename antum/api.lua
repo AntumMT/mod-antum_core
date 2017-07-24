@@ -27,7 +27,12 @@
 
 -- Displays a message in the log
 function antum.log(level, msg)
-	core.log(level, '[' .. core.get_current_modname() .. '] ' .. msg)
+	local prefix = '[' .. core.get_current_modname() .. '] '
+	if msg == nil then
+		core.log(prefix .. level)
+	else
+		core.log(level, prefix .. msg)
+	end
 end
 
 function antum.logAction(msg)
