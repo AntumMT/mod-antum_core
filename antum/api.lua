@@ -61,16 +61,15 @@ function antum.getCurrentModPath()
 end
 
 
---[[
-  Loads a mod sub-script.
-  
+--[[ Loads a mod sub-script.
+
   @param script_name
     Name or base name of the script file
   @param lua_ext
     type: bool
     default: true
     description: If 'true', appends '.lua' extension to script filename
-]]--
+]]
 function antum.loadScript(script_name, lua_ext)
 	-- Default 'true'
 	if lua_ext == nil then
@@ -191,16 +190,15 @@ function antum.getItem(item_name)
 end
 
 
---[[
-  Retrieves a list of items containing a string.
-  
+--[[ Retrieves a list of items containing a string.
+
   @param substring
     String to match within item names
   @param case_sensitive
     If 'true', 'substring' case must match that of item name
   @return
     List of item names matching 'substring'
-]]--
+]]
 function antum.getItemNames(substring, case_sensitive)
 	antum.logAction('Checking registered items for "' .. substring .. '" in item name ...')
 	
@@ -227,9 +225,8 @@ function antum.getItemNames(substring, case_sensitive)
 end
 
 
---[[
-  Un-registers an item & converts its name to an alias.
-  
+--[[ Un-registers an item & converts its name to an alias.
+
   @param item_name
     Name of the item to override
   @param alias_of
@@ -242,9 +239,8 @@ function antum.convertItemToAlias(item_name, alias_of)
 end
 
 
---[[
-  Changes object description.
-  
+--[[ Changes object description.
+
   @param item_name
     Name of item to be altered
   @param description
